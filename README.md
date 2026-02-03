@@ -62,33 +62,17 @@ PREV_RATE_INTEREST_PRIVILEGED_mean: Sugiere que clientes que han tenido tasas pr
 
 
 
-Optimización Económica: El ajuste del umbral de decisión permitió una reducción proyectada en pérdidas por impago en comparación con el modelo base.
+***Definición del Escenario Económico***
 
---- Análisis Económico ---
+Para medir el impacto en pesos, necesitamos asignar valores hipotéticos (pero realistas para el sector financiero) a cada decisión del modelo:
 
-Utilidad Proyectada SIN modelo: $63,426,000.00
+* Verdadero Positivo (VP): El modelo detecta a un cliente que no iba a pagar. Ahorro: Evitas perder el capital del préstamo (ej. $10,000).
 
-Utilidad Proyectada CON modelo: $61,806,000.00
+* Verdadero Negativo (VN): El modelo aprueba a quien sí paga. Ganancia: Los intereses generados (ej. $2,000).
 
-Impacto Económico del Modelo:  $-1,620,000.00
+* Falso Positivo (FP): El modelo rechaza a alguien que sí iba a pagar. Costo de Oportunidad: Pierdes el interés que pudiste ganar (-$2,000).
 
-Evaluación con Umbral Estricto (0.3):
-
---- Análisis Económico ---
-
-Utilidad Proyectada SIN modelo: $63,426,000.00
-
-Utilidad Proyectada CON modelo: $33,598,000.00
-
-Impacto Económico del Modelo:  $-29,828,000.00
+* Falso Negativo (FN): El modelo aprueba a alguien que no paga. Pérdida Directa: Pierdes el capital (-$10,000).
 
 
 
-📁 Estructura del Repositorio
-notebooks/: Google Colab con el análisis paso a paso.
-
-data/: (Opcional) Enlace al dataset original o muestra de datos.
-
-src/: Scripts de limpieza y modelado.
-
-README.md: Descripción del proyecto.
