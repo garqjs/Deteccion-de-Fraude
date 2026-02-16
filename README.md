@@ -3,9 +3,18 @@
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![XGBoost](https://img.shields.io/badge/Model-XGBoost-orange.svg)](https://xgboost.readthedocs.io/)
 [![DuckDB](https://img.shields.io/badge/Data_Engine-DuckDB-yellow.svg)](https://duckdb.org/)
+[![Kaggle](https://img.shields.io/badge/Dataset-Kaggle-blue.svg)](https://www.kaggle.com/competitions/ieee-fraud-detection/data)
 
 ## 📝 Resumen Ejecutivo
 Este repositorio presenta un sistema de detección de fraude transaccional de **grado bancario**. A diferencia de los modelos académicos, este pipeline implementa ingeniería de variables de **Velocity**, manejo de desbalanceo de clases mediante `scale_pos_weight` y validación de riesgo a través de la **Estadística KS** y el **Coeficiente Gini**.
+
+## 📂 Dataset
+El modelo utiliza los datos de la competencia **IEEE-CIS Fraud Detection**. 
+Puedes acceder y descargar los archivos directamente desde Kaggle:
+
+🔗 [IEEE-CIS Fraud Detection Dataset](https://www.kaggle.com/competitions/ieee-fraud-detection/data)
+
+> **Nota:** El dataset se compone de dos tablas principales (`train_transaction` y `train_identity`) que fueron unidas mediante el `TransactionID`.
 
 ## 🚀 Key Highlights
 - **Ingeniería de Datos High-Performance:** Uso de **DuckDB** para procesar millones de registros y calcular métricas de frecuencia (Velocity) en milisegundos.
